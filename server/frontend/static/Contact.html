@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Company - Contact Us</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Styling */
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .header nav a:hover {
+      color: #ff6347;
+    }
+
+    /* Main Content Styling */
+    .main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .main .central-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    .contact-info, .contact-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    .contact-info h2, .contact-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .contact-info a {
+      color: #ff6347;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      padding: 10px;
+      border: none;
+      background-color: #ff6347;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #e5533d;
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .footer .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer .socials a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .footer .socials a:hover {
+      color: #ff6347;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header .container, .footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header nav {
+        margin-top: 10px;
+      }
+
+      .main .contact-info, .main .contact-form {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Your Company</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <div class="main">
+    <!-- Central Image -->
+    <img src="https://burst.shopifycdn.com/photos/contact-us-image.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="Contact Us" class="central-image">
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h2>Get in Touch with Us</h2>
+      <p><strong>Address:</strong> 1234 Elm Street, Suite 567, Springfield, USA</p>
+      <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+      <p><strong>Follow Us:</strong></p>
+      <div class="socials">
+        <a href="#" target="_blank">🌐 Website</a>
+        <a href="#" target="_blank">🐦 Twitter</a>
+        <a href="#" target="_blank">📘 Facebook</a>
+        <a href="#" target="_blank">📸 Instagram</a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here.." rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Garvit Bhatia All rights reserved.</p>
+      <div class="socials">
+        <a href="#" target="_blank">🌐 Website</a>
+        <a href="#" target="_blank">🐦 Twitter</a>
+        <a href="#" target="_blank">📘 Facebook</a>
+        <a href="#" target="_blank">📸 Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
